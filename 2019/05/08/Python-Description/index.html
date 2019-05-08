@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Python Description | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="描述符使用指南 在这个世界上没有什么是完美的，Python的描述符也不例外。描述符允许你做一些很酷的事情，但是这些很酷的事情是有代价的。在这里，我们将讨论使用描述符的好处和坏处。  描述符的优点Encapsulation（封装）描述符最有用的一个方面是它们能很好地封装数据。使用描述符，您可以使用属性访问表示法(a.x)以简单的方式访问属性，同时在后台执行更复杂的操作。例如，一个Circle类具有半">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Description">
+<meta property="og:url" content="http://yoursite.com/2019/05/08/Python-Description/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="描述符使用指南 在这个世界上没有什么是完美的，Python的描述符也不例外。描述符允许你做一些很酷的事情，但是这些很酷的事情是有代价的。在这里，我们将讨论使用描述符的好处和坏处。  描述符的优点Encapsulation（封装）描述符最有用的一个方面是它们能很好地封装数据。使用描述符，您可以使用属性访问表示法(a.x)以简单的方式访问属性，同时在后台执行更复杂的操作。例如，一个Circle类具有半">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://img2018.cnblogs.com/blog/736399/201905/736399-20190508154839279-2089745492.png">
+<meta property="og:updated_time" content="2019-05-08T09:46:35.127Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python Description">
+<meta name="twitter:description" content="描述符使用指南 在这个世界上没有什么是完美的，Python的描述符也不例外。描述符允许你做一些很酷的事情，但是这些很酷的事情是有代价的。在这里，我们将讨论使用描述符的好处和坏处。  描述符的优点Encapsulation（封装）描述符最有用的一个方面是它们能很好地封装数据。使用描述符，您可以使用属性访问表示法(a.x)以简单的方式访问属性，同时在后台执行更复杂的操作。例如，一个Circle类具有半">
+<meta name="twitter:image" content="https://img2018.cnblogs.com/blog/736399/201905/736399-20190508154839279-2089745492.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Python-Description" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/08/Python-Description/" class="article-date">
+  <time datetime="2019-05-08T09:44:55.000Z" itemprop="datePublished">2019-05-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python Description
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="描述符使用指南"><a href="#描述符使用指南" class="headerlink" title="描述符使用指南"></a>描述符使用指南</h3><blockquote>
+<p>在这个世界上没有什么是完美的，Python的描述符也不例外。描述符允许你做一些很酷的事情，但是这些很酷的事情是有代价的。在这里，我们将讨论使用描述符的好处和坏处。</p>
+</blockquote>
+<h3 id="描述符的优点"><a href="#描述符的优点" class="headerlink" title="描述符的优点"></a>描述符的优点</h3><h4 id="Encapsulation（封装）"><a href="#Encapsulation（封装）" class="headerlink" title="Encapsulation（封装）"></a>Encapsulation（封装）</h4><p>描述符最有用的一个方面是它们能很好地封装数据。<br>使用描述符，您可以使用属性访问表示法(a.x)以简单的方式访问属性，同时在后台执行更复杂的操作。例如，一个Circle类具有半径、直径、周长和面积属性，但是因为它们都是相关联的，所以只需要存储一个属性(我们将在本例中使用半径)，就可以根据它计算其他的值。但从外部程序看，它们都像是存储在对象上的属性</p>
+<h4 id="Reuse-of-Read-Write-Patterns-重用读-写模式"><a href="#Reuse-of-Read-Write-Patterns-重用读-写模式" class="headerlink" title="Reuse of Read/Write Patterns(重用读/写模式)"></a>Reuse of Read/Write Patterns(重用读/写模式)</h4><p>使用专用描述符，可以重用读取和/或写入属性的代码,这些属性也可用于相同类或其他类共享的属性类型中的重复属性,下面几节将描述一些可重用模式的示例。</p>
+<h4 id="Lazy-Instantiation-懒加载"><a href="#Lazy-Instantiation-懒加载" class="headerlink" title="Lazy Instantiation(懒加载)"></a>Lazy Instantiation(懒加载)</h4><p>您可以使用描述符来定义一个非常简单的语法，用于惰性地实例化属性。后面将提供一个很好的惰性属性实现的代码.<br>在Circle这个例子中，non-radius属性的缓存失效后，不需要立即计算其值;等到需要的时候再去计算。这就是懒加载。</p>
+<h4 id="validation-正确性"><a href="#validation-正确性" class="headerlink" title="validation(正确性)"></a>validation(正确性)</h4><p>编写许多描述符只是为了确保传入的数据符合类或属性的不变量。 这样的描述符通常也可以被设计为方便的装饰器。例如Circle：所有这些属性都应该是正数，因此所有描述符也可以确保设置的值是正的。</p>
+<h4 id="Triggering-Actions-触发操作"><a href="#Triggering-Actions-触发操作" class="headerlink" title="Triggering Actions(触发操作)"></a>Triggering Actions(触发操作)</h4><p>描述符可用于在访问属性时触发某些操作。例如，在观察者模式中可以按属性意义实现，以便在属性发生变化时触发对观察者的调用。最后一个圆的例子，所有的属性都基于延迟计算，来计算半径半径。为了避免每次都要计算它们，可以缓存结果。然后，当其中一个缓存发生更改时，就可能导致其他所有缓存失效。</p>
+<h4 id="Writing-for-the-Class-Level-在类级别进行操作"><a href="#Writing-for-the-Class-Level-在类级别进行操作" class="headerlink" title="Writing for the Class Level(在类级别进行操作)"></a>Writing for the Class Level(在类级别进行操作)</h4><p>因为描述符存储在类范围而不是实例范围中，所以它允许你在类级别上执行更健壮的操作。例如，描述符使classmethod和staticmethod工作，这将在下一章中进行解释。</p>
+<h3 id="描述符的缺点"><a href="#描述符的缺点" class="headerlink" title="描述符的缺点"></a>描述符的缺点</h3><p>尽管描述符非常棒，但是使用它们也是有代价的，下面我们来说说它的缺点</p>
+<h4 id="Encapsulation-封装"><a href="#Encapsulation-封装" class="headerlink" title="Encapsulation(封装)"></a>Encapsulation(封装)</h4><p>？？？封装，不是刚才说这是优点么？这里怎么又成了缺点了呢？你可以在使用属性的时候在程序中隐藏其复杂的属性。<br>使用getter和setter，用户至少可以看到有一个函数被调用，而且在一个函数调用中可以发生很多事情。 但是用户并不一定期望表面上的属性访问也会导致其他事情发生。大多数时候，这不是问题，但是它会妨碍用户调试任何问题，因为很明显，代码不可能是问题。</p>
+<h4 id="Can-Be-Difficult-To-Write-代码编写困难"><a href="#Can-Be-Difficult-To-Write-代码编写困难" class="headerlink" title="Can Be Difficult To Write(代码编写困难)"></a>Can Be Difficult To Write(代码编写困难)</h4><p>在决定如何保存所表示的属性时，还有许多需要考虑的问题和常见的陷阱，无论您是决定在描述符上保存还是在属性的对象上保存。描述符-工具库就是为此而专门创建的</p>
+<h4 id="Additional-Objects-附加对象"><a href="#Additional-Objects-附加对象" class="headerlink" title="Additional  Objects(附加对象)"></a>Additional  Objects(附加对象)</h4><p>因为描述符在混合中添加了另一层间接/抽象，所以它们还在内存中添加至少一个附加对象，以及至少一个额外的调用堆栈级别。 在大多数情况下，它们不止一个。 这增加了bloat使用getter和setter至少可以部分缓。</p>
+<h4 id="Summary-总结"><a href="#Summary-总结" class="headerlink" title="Summary(总结)"></a>Summary(总结)</h4><p>描述符非常棒，允许各种优秀的特性，这些特性能够很好地向代码的用户隐藏它们的复杂性，但是您一定要意识到这种能力是有代价的。</p>
+<h3 id="描述符在标准库"><a href="#描述符在标准库" class="headerlink" title="描述符在标准库"></a>描述符在标准库</h3><p>Python中有三个基本的、众所周知的描述符:属性、类方法和静态方法。还有第四种方法，您一直在使用，但是不太可能知道它是一个描述符。大部分只知道property是个描述符，很少有人知道，其实classmethod和staticmethod也是描述符。由于描述符的创建是隐式的，所以普通方法实际上是神奇地完成的，但是它仍然不是完全神奇的，因为它是使用任何人都可以创建的语言构造来完成的。我发现最有趣的是前三个都是函数装饰器，这是Python的另一个非常棒的特性，尽管它们要简单得多，值得一读。</p>
+<h4 id="The-property-Class-属性类"><a href="#The-property-Class-属性类" class="headerlink" title="The property Class(属性类)"></a>The property Class(属性类)</h4><p>这里不会细讲如何使用property和装饰器，重点将放在理解和如何创建描述符。<br>在所有描述符中，属性是通用的。这是因为它本身并不做任何事情，而是允许用户通过提供自己的getter、setter和deleters来将他们想要的功能注入到它中。<br>为了清楚的明白它是如何工作的这里看一个例子。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">class property:</span><br><span class="line">    def __init__(self, fget=None, fset=None, fdel=None):</span><br><span class="line">        self.fget = fget</span><br><span class="line">        self.fset = fset</span><br><span class="line">        self.fdel = fdel</span><br><span class="line"></span><br><span class="line">    def __get__(self, instance, owner):</span><br><span class="line">        if instance is None:</span><br><span class="line">            return self</span><br><span class="line">        elif self.fget is None:</span><br><span class="line">            raise AttributeError(&quot;unreadable attribute&quot;)</span><br><span class="line">        else:</span><br><span class="line">            return self.fget(instance)</span><br><span class="line"></span><br><span class="line">    def __set__(self, instance, value):</span><br><span class="line">        if self.fset is None:</span><br><span class="line">            raise AttributeError(&quot;can&apos;t set attribute&quot;)</span><br><span class="line">        else:</span><br><span class="line">            self.fset(instance, value)</span><br><span class="line"></span><br><span class="line">    def __delete__(self, instance):</span><br><span class="line">        if self.fdel is None:</span><br><span class="line">            raise AttributeError(&quot;can&apos;t delete attribute&quot;)</span><br><span class="line">        else:</span><br><span class="line">            self.fdel(instance)</span><br><span class="line"></span><br><span class="line">    def getter(self, fget):</span><br><span class="line">        #type(类名, 父类的元组（针对继承的情况，可以为空），包含属性的字典（名称和值）)</span><br><span class="line">        return type(self)(fget, self.fset, self.fdel)</span><br><span class="line"></span><br><span class="line">    def setter(self, fset):</span><br><span class="line">        return type(self)(self.fget, fset, self.fdel)</span><br><span class="line"></span><br><span class="line">    def deleter(self, fdel):</span><br><span class="line">        return type(self)(self.fget, self.fset, fdel)</span><br></pre></td></tr></table></figure></p>
+<p>正如你看到，property类几乎没有自己的实际功能;它只是委托给它的函数。当一个函数没委派一个确切的方法时，会引发AttributeError。<br>属性类的一个优点是它基本上只接受方法。甚至它的构造函数(可以同时提供所有三个方法)也可以只调用一个方法，甚至不调用任何方法，因此，构造函数和其他方法可以用非常方便的语法作为装饰器。这个代码示例中省略了doc功能，在源码中是doc这个参数的，但是因为它的功能不是很重要，所以这里就不写了。</p>
+<h4 id="The-classmethod-Descriptor-clssmethod描述符"><a href="#The-classmethod-Descriptor-clssmethod描述符" class="headerlink" title="The classmethod Descriptor(clssmethod描述符)"></a>The classmethod Descriptor(clssmethod描述符)</h4><p>classmethod是另外一个描述符，它不像property，它的使用频率更高，classmethod是非常有意思的一个设计概念，这是其他语言不存在的，Python的类型系统使用类作为对象，使得类方法简单且值得创建。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class classmethod:   </span><br><span class="line">     def __init__(self, func):</span><br><span class="line">            self.func = func   </span><br><span class="line">    def __get__(self, instance, owner):</span><br><span class="line">           return functools.partial(self.func, owner)</span><br></pre></td></tr></table></figure></p>
+<p>classmethod属于非数据描述符，所以它只实现了__get__方法，我们看到在__get__方法完全忽略instance参数使用，正如名称中的“类”所暗示的那样，该方法与类的实例无关，只处理类本身。<br>为什么__get__()函数返回了functools.partial对象，尽管已经使用owner参数呢，要明白原因，想想标有classmethod的带有多个参数的函数。第一个参数是类参数，通常我们写作cls。这个类参数填充了对partial的调用，这样返回的函数就可以使用用户想要显式提供的参数来调用，真正的实现不使用partial，但工作原理类似。同样，__name__、__doc__等的代码被省略，只显示主要功能的工作方式。</p>
+<h4 id="The-staticmethod-Descriptor-staticmethod描述符"><a href="#The-staticmethod-Descriptor-staticmethod描述符" class="headerlink" title="The staticmethod Descriptor(staticmethod描述符)"></a>The staticmethod Descriptor(staticmethod描述符)</h4><p>用staticmethod标记的方法很奇怪，因为它实际上只是一个函数，但它附加到一个类。作为类的一部分，除了向用户显示它与该类关联并给它一个更特定的名称空间外，没有做任何事情，另外，有趣的是，因为staticmethod和classmethod是使用描述符实现的，所以它们被子类继承。静态方法的实现比类方法更简单;它只是接受一个函数，然后在调用get()时返回它<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class staticmethod:    </span><br><span class="line">     def __init__(self, func):</span><br><span class="line">          self.func = func    </span><br><span class="line">    def __get__(self, instance, owner):</span><br><span class="line">          return self.func</span><br></pre></td></tr></table></figure></p>
+<h4 id="Regular-Methods（常规方法）"><a href="#Regular-Methods（常规方法）" class="headerlink" title="Regular  Methods（常规方法）"></a>Regular  Methods（常规方法）</h4><p>请记住，前面说过常规方法也隐式地使用描述符。事实上，所有函数都可以用作方法。这是因为函数既是可调用的，也是非数据描述符。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class function:    </span><br><span class="line">     def __call__(self, *args, **kwargs):</span><br><span class="line">         # do something</span><br><span class="line">    def __get__(self, instance, owner=None):</span><br><span class="line">         if instance is None:</span><br><span class="line">              return self</span><br><span class="line">         else:</span><br><span class="line">              return functools.partial(self, instance)</span><br></pre></td></tr></table></figure>
+<h4 id="Summary-总结-1"><a href="#Summary-总结-1" class="headerlink" title="Summary(总结)"></a>Summary(总结)</h4><p>在本章中，我们已经看到了最常见的内置描述符。现在我们已经看到了一些示例，让我们通过深入研究数据描述符和非数据描述符之间的实际差异来更仔细、更好地了解它们是如何工作的。</p>
+<h3 id="属性访问和描述符"><a href="#属性访问和描述符" class="headerlink" title="属性访问和描述符"></a>属性访问和描述符</h3><p>前面说过属性访问调用转换为描述符调用，但没有说明如何转换。答案是getattribute()、setattr()和delattr ()。接下来我们将深入研究它。<br>为什么set和delete方法以attr结尾，而get方法以attribute结尾。<br>部分原因是，实际上有一个getattr()方法，但是它的使用方法与其他方法不太一样。<br>getattribute()处理所有常规的属性查找逻辑，如果其他方法都失败了<br>getattr()在最后一搏中被getattribute()调用。建议不要对getattribute()进行更改，除非您真正知道自己在做什么时才这样做。</p>
+<h4 id="Instance-Access-访问实例"><a href="#Instance-Access-访问实例" class="headerlink" title="Instance  Access(访问实例)"></a>Instance  Access(访问实例)</h4><p>在属性的三种用法中，简单地查找属性是最复杂的，因为有多个地方可以查找属性:在实例和类上。此外，如果它是类上的描述符，那么数据描述符和非数据描述符有两种不同的行为。<br>__getattribute()__有一个优先级顺序，描述在哪里查找属性以及如何处理它们.<br>这是优先事项列表</p>
+<ul>
+<li>数据描述符</li>
+<li>实例属性</li>
+<li>非数据描述符和类属性</li>
+<li>__getattr__（可能在__getattribute__中被调用）<br>__getattribute__()做的第一件事是在类字典中查找属性。如果没有找到，它将通过类的方法j继续顺序(MRO)继续查找。如果仍然没有找到，它将转移到下一个优先级。如果找到它，则检查它是否是数据描述符。如果不是，就继续移动到下一个优先级，假定有__get__()方法，如果返回的是数据描述符，就去调用__get__()方法并返回结果。否则，如果没有__get__()放就继续下一个优先级。<br>这里有很多假设条件，优先级列表中的下一步是检查实例字典(或slots，如果对象正在使用)。如果它存在，我们只需返回它。否则，它将移动到下一个优先级。<br>在这个优先级中，它将再次检查类字典，如果需要，它将沿着MRO列表向下工作。如果什么也没有找到，它就转移到下一个优先级。否则，它将检查找到的对象，看看它是否是一个描述符(此时，我们只需要检查它是否是一个非数据描述符，因为如果我们已经完成了这一步，它肯定不是一个数据描述符)。然后就去调用__get__()方法并返回结果，否则就返回一个对象。这一次，如果没有get()，它就没有返回描述符对象本身的备份，因为作为一个非数据描述符，得保证它有__get__()方法。如果到目前为止所有其他操作都失败了，那么它将与getattr()一起检查关于属性访问的任何可能的自定义行为。如果什么都没有，则会引发AttributeError。流程图显示了如何访问描述符。<br><img src="https://img2018.cnblogs.com/blog/736399/201905/736399-20190508154839279-2089745492.png" alt><br>当类型为type或没有新属性的元类的情况下，与实例访问相比，类访问可以以一种简化的方式查看;它甚至没有一个优先级列表。它仍然使用getattribute()，但是它是在它的元类上定义的。它只是在类字典中搜索，根据需要在MRO中进行搜索。如果找到，它将检查它是否是带有get()方法的描述符，如果是它会去调用并返回结果。虽然在类级别，它不关心是描述符的类型是数据还是非数据，但是如果描述符有__get__() 方法,则使用该方法。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/08/Python-Description/" data-id="cjvf1v6wr000191fyyvwfoi30" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/05/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">May 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/05/08/Python-Description/">Python Description</a>
+          </li>
+        
+          <li>
+            <a href="/2019/05/08/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
