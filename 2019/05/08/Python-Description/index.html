@@ -15,7 +15,7 @@
 <meta property="og:description" content="描述符使用指南 在这个世界上没有什么是完美的，Python的描述符也不例外。描述符允许你做一些很酷的事情，但是这些很酷的事情是有代价的。在这里，我们将讨论使用描述符的好处和坏处。  描述符的优点Encapsulation（封装）描述符最有用的一个方面是它们能很好地封装数据。使用描述符，您可以使用属性访问表示法(a.x)以简单的方式访问属性，同时在后台执行更复杂的操作。例如，一个Circle类具有半">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://img2018.cnblogs.com/blog/736399/201905/736399-20190508154839279-2089745492.png">
-<meta property="og:updated_time" content="2019-05-08T09:46:35.127Z">
+<meta property="og:updated_time" content="2019-05-22T09:02:53.115Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python Description">
 <meta name="twitter:description" content="描述符使用指南 在这个世界上没有什么是完美的，Python的描述符也不例外。描述符允许你做一些很酷的事情，但是这些很酷的事情是有代价的。在这里，我们将讨论使用描述符的好处和坏处。  描述符的优点Encapsulation（封装）描述符最有用的一个方面是它们能很好地封装数据。使用描述符，您可以使用属性访问表示法(a.x)以简单的方式访问属性，同时在后台执行更复杂的操作。例如，一个Circle类具有半">
@@ -92,7 +92,7 @@
 <p>在这个世界上没有什么是完美的，Python的描述符也不例外。描述符允许你做一些很酷的事情，但是这些很酷的事情是有代价的。在这里，我们将讨论使用描述符的好处和坏处。</p>
 </blockquote>
 <h3 id="描述符的优点"><a href="#描述符的优点" class="headerlink" title="描述符的优点"></a>描述符的优点</h3><h4 id="Encapsulation（封装）"><a href="#Encapsulation（封装）" class="headerlink" title="Encapsulation（封装）"></a>Encapsulation（封装）</h4><p>描述符最有用的一个方面是它们能很好地封装数据。<br>使用描述符，您可以使用属性访问表示法(a.x)以简单的方式访问属性，同时在后台执行更复杂的操作。例如，一个Circle类具有半径、直径、周长和面积属性，但是因为它们都是相关联的，所以只需要存储一个属性(我们将在本例中使用半径)，就可以根据它计算其他的值。但从外部程序看，它们都像是存储在对象上的属性</p>
-<h4 id="Reuse-of-Read-Write-Patterns-重用读-写模式"><a href="#Reuse-of-Read-Write-Patterns-重用读-写模式" class="headerlink" title="Reuse of Read/Write Patterns(重用读/写模式)"></a>Reuse of Read/Write Patterns(重用读/写模式)</h4><p>使用专用描述符，可以重用读取和/或写入属性的代码,这些属性也可用于相同类或其他类共享的属性类型中的重复属性,下面几节将描述一些可重用模式的示例。</p>
+<h4 id="Reuse-of-Read-Write-Patterns-重用读-写模式"><a href="#Reuse-of-Read-Write-Patterns-重用读-写模式" class="headerlink" title="Reuse of Read/Write Patterns(重用读/写模式)"></a>Reuse of Read/Write Patterns(重用读/写模式)</h4><p>使用专用描述符，可以重用读取和/或写入属性的代码,这些属性也可用于相同类或其他类共享的属性类型中的重复属性,下面几节将描述一些可重用模式的示例。<br><a id="more"></a></p>
 <h4 id="Lazy-Instantiation-懒加载"><a href="#Lazy-Instantiation-懒加载" class="headerlink" title="Lazy Instantiation(懒加载)"></a>Lazy Instantiation(懒加载)</h4><p>您可以使用描述符来定义一个非常简单的语法，用于惰性地实例化属性。后面将提供一个很好的惰性属性实现的代码.<br>在Circle这个例子中，non-radius属性的缓存失效后，不需要立即计算其值;等到需要的时候再去计算。这就是懒加载。</p>
 <h4 id="validation-正确性"><a href="#validation-正确性" class="headerlink" title="validation(正确性)"></a>validation(正确性)</h4><p>编写许多描述符只是为了确保传入的数据符合类或属性的不变量。 这样的描述符通常也可以被设计为方便的装饰器。例如Circle：所有这些属性都应该是正数，因此所有描述符也可以确保设置的值是正的。</p>
 <h4 id="Triggering-Actions-触发操作"><a href="#Triggering-Actions-触发操作" class="headerlink" title="Triggering Actions(触发操作)"></a>Triggering Actions(触发操作)</h4><p>描述符可用于在访问属性时触发某些操作。例如，在观察者模式中可以按属性意义实现，以便在属性发生变化时触发对观察者的调用。最后一个圆的例子，所有的属性都基于延迟计算，来计算半径半径。为了避免每次都要计算它们，可以缓存结果。然后，当其中一个缓存发生更改时，就可能导致其他所有缓存失效。</p>
@@ -123,13 +123,27 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/08/Python-Description/" data-id="cjvf2433j0000emfyhqspclpu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/08/Python-Description/" data-id="cjvz0491i0001arfymktde4v9" class="article-share-link">Share</a>
       
       
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2019/05/22/Inside-The-Python-Virtual/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
@@ -160,6 +174,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/05/22/Inside-The-Python-Virtual/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2019/05/08/Python-Description/">Python Description</a>
