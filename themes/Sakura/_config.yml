@@ -1,10 +1,10 @@
 # site name
-prefixName: さくら荘その
-siteName: hojun
+prefixName: cxapython
+siteName: cxapython
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
-url: https://sakura.hojun.cn
+url: https://www.cxapython.com
 description: Live your life with passion! With some drive!
 cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1

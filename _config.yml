@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: hojun
+title: CXA
 subtitle:
-description: 好少年光芒万丈
+description: I ❤️ Python 
 keywords:
-author: hojun
+author: cxa
 language: zh-cn
 timezone:
 
@@ -82,7 +82,7 @@ deploy:
   repo: 
     # github: git@github.com:honjun/honjun.github.io.git
     # github: https://github.com/honjun/honjun.github.io.git
-    coding: https://git.coding.net/hojun/hojun.git
+    coding: https://github.com/cxapython/cxapython.github.io.git
   branch: master
 
 # backup
