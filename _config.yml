@@ -82,7 +82,7 @@ deploy:
   repo: 
     # github: git@github.com:honjun/honjun.github.io.git
     # github: https://github.com/honjun/honjun.github.io.git
-    coding: https://github.com/cxapython/cxapython.github.io.git
+    coding: git@github.com:cxapython/cxapython.github.io.git
   branch: master
 
 # backup
